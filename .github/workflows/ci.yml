@@ -21,6 +21,6 @@ jobs:
       - name: Build
         run: |
           call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
-          powershell -File Scripts\build.ps1
+          powershell -File Scripts\build.ps1 -Rebuild
         shell: cmd
           
