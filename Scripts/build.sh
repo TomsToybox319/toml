@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if [ -d "external"]; then
+if [ -d "external"]; then {}
 else
     git clone https://github.com/TomsToybox319/testlib.git external
     cd external
