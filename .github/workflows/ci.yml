@@ -26,3 +26,12 @@ jobs:
           
       - name: Test
         run: powershell -File Scripts\test.ps1
+
+  linux:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: Build
+        run: bash Scripts/build.sh
