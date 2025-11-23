@@ -35,3 +35,6 @@ jobs:
         
       - name: Build
         run: bash Scripts/build.sh
+
+      - name: Test
+        run: bash Scripts/test.sh
