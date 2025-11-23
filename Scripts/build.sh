@@ -5,7 +5,7 @@ if [ ! -d "external" ]; then
     git clone https://github.com/TomsToybox319/testlib.git external
     cd external
     chmod +x Scripts/build.sh
-    ./Scripts/build.sh
+    . Scripts/build.sh
     ls Build/
     cd ..
 fi
