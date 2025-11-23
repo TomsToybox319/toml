@@ -5,9 +5,7 @@ if [ ! -d "external" ]; then
     git clone https://github.com/TomsToybox319/testlib.git external
     cd external
     chmod +x Scripts/build.sh
-    set -x
     . Scripts/build.sh
-    set +x
     ls Build/
     cd ..
 fi
@@ -26,6 +24,6 @@ CompilerOptions+=" -Wno-weak-vtables" # Disable warnings about vtables
 CompilerOptions+=" -std=c++23"   # Compile with C++23 standard                                           
 CompilerOptions+=" -I../Src/"    # Set include directory
 CompilerOptions+=" -I../external/Src/"    # Set include directory
-clang++  ../main.cpp ../external/Src/unittest.cpp $CompilerOptions
+clang++  ../main.cpp ../external/Build/unittest.o $CompilerOptions
 
 cd ..
