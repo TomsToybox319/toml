@@ -1,11 +1,10 @@
 #!/bin/bash
 set -e
 
-if [ -d "external"]; then {}
-else
+if [ ! -d "external" ]; then 
     git clone https://github.com/TomsToybox319/testlib.git external
     cd external
-    . Scripts\build.sh
+    . Scripts/build.sh
     cd ..
 fi
 
