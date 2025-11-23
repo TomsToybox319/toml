@@ -24,3 +24,5 @@ jobs:
           powershell -File Scripts\build.ps1 -Rebuild
         shell: cmd
           
+      - name: Test
+        run: powershell -File Scripts\test.ps1
