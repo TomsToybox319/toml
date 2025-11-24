@@ -25,6 +25,6 @@ CompilerOptions+=" -std=gnu++2b"   # Compile with C++23 standard
 CompileOptions+=" -D__cpp_concepts=202002L" # Needed for std::expected?
 CompilerOptions+=" -I../Src/"    # Set include directory
 CompilerOptions+=" -I../external/Src/"    # Set include directory
-clang++  ../main.cpp ../external/Build/unittest.o $CompilerOptions
+g++  ../main.cpp ../external/Build/unittest.o $CompilerOptions
 
 cd ..
